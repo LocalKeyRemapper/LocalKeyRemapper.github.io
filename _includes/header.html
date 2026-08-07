@@ -1,0 +1,63 @@
+<header class="site-header" data-site-header>
+    <div class="container header-content">
+        <a
+            class="site-brand"
+            href="{{ '/' | relative_url }}"
+            aria-label="LocalKeyRemapper — Home"
+        >
+            <img
+                src="{{ '/assets/images/localkeyremapper-icon.png' | relative_url }}"
+                alt=""
+                width="42"
+                height="42"
+            >
+            <span>LocalKeyRemapper</span>
+        </a>
+
+        <button
+            class="navigation-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+            aria-label="Open navigation"
+            data-navigation-toggle
+        >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </button>
+
+        <nav
+            id="main-navigation"
+            class="site-navigation"
+            aria-label="Main navigation"
+            data-navigation
+        >
+            <ul>
+                <li>
+                    <a href="{{ '/' | relative_url }}#principles">
+                        Principles
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ '/' | relative_url }}#features">
+                        Features
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ '/' | relative_url }}#accessibility">
+                        Accessibility
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="header-download"
+                        href="{{ '/download.html' | relative_url }}"
+                    >
+                        Download
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,8 @@
+title: LocalKeyRemapper
+description: A native, privacy-first, security-first and accessibility-first keyboard remapper for macOS.
+
+url: "https://alessandro-giuriati.github.io"
+baseurl: "/LocalKeyRemapper-Website"
+
+exclude:
+  - README.md

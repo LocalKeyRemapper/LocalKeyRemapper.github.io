@@ -1,0 +1,410 @@
+---
+layout: default
+title: Install LocalKeyRemapper from DMG
+description: Step-by-step guide to install LocalKeyRemapper from the official DMG, allow its first launch on macOS and grant the required Accessibility permission.
+extra_css: /assets/css/install.css
+---
+
+<section class="install-hero">
+            <div class="container install-hero-inner">
+                <p class="eyebrow">DMG installation guide</p>
+
+                <h1>Install LocalKeyRemapper on macOS.</h1>
+
+                <p class="install-hero-description">
+                    Start with the DMG you already downloaded, move the app into
+                    Applications, approve its first launch and grant the Accessibility
+                    permission required for keyboard remapping.
+                </p>
+
+                <div class="install-meta" aria-label="Installation information">
+                    <span>macOS 13.5 or later</span>
+                    <span>No Terminal required</span>
+                    <span>Follow the steps in order</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#steps">
+                        Start the guide
+                    </a>
+
+                    <a class="button button-secondary" href="{{ '/download.html' | relative_url }}">
+                        Download options
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="install-note">
+            <div class="container">
+                <div class="notice-card">
+                    <div>
+                        <p class="section-label">Before you begin</p>
+                        <h2>This guide starts after the DMG has been downloaded.</h2>
+                    </div>
+
+                    <p>
+                        If you do not have the DMG yet, use the Download page first.
+                        Only obtain LocalKeyRemapper from the official project distribution.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="steps" class="install-steps-section">
+            <div class="container">
+                <div class="install-section-heading">
+                    <p class="section-label">Part 1 · Install the app</p>
+                    <h2>Move LocalKeyRemapper into Applications.</h2>
+                    <p>
+                        These first steps are straightforward, so they stay text-only.
+                        The visual guide begins when macOS starts asking for security permissions.
+                    </p>
+                </div>
+
+                <ol class="install-steps install-steps-compact">
+                    <li class="install-step">
+                        <div class="step-number" aria-hidden="true">1</div>
+                        <div class="step-content">
+                            <p class="step-kicker">Open the disk image</p>
+                            <h3>Open the downloaded LocalKeyRemapper DMG.</h3>
+                            <p>
+                                Double-click the <code>.dmg</code> file in Downloads.
+                                macOS will mount it and open the LocalKeyRemapper installation window.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="install-step">
+                        <div class="step-number" aria-hidden="true">2</div>
+                        <div class="step-content">
+                            <p class="step-kicker">Install</p>
+                            <h3>Drag LocalKeyRemapper into Applications.</h3>
+                            <p>
+                                In the DMG window, drag <strong>LocalKeyRemapper.app</strong>
+                                onto the <strong>Applications</strong> folder and wait for the copy
+                                to finish.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="install-step">
+                        <div class="step-number" aria-hidden="true">3</div>
+                        <div class="step-content">
+                            <p class="step-kicker">Finish with the DMG</p>
+                            <h3>Eject the LocalKeyRemapper disk image.</h3>
+                            <p>
+                                After the copy has completed, eject the mounted disk image.
+                                The app remains installed in your Applications folder.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="install-step">
+                        <div class="step-number" aria-hidden="true">4</div>
+                        <div class="step-content">
+                            <p class="step-kicker">First launch</p>
+                            <h3>Open LocalKeyRemapper from Applications.</h3>
+                            <p>
+                                Open Finder → <strong>Applications</strong>, then double-click
+                                <strong>LocalKeyRemapper.app</strong>.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="install-phase-heading">
+                    <p class="section-label">Part 2 · Allow the first launch</p>
+                    <h2>Approve LocalKeyRemapper in macOS Privacy &amp; Security.</h2>
+                </div>
+
+                <ol class="install-steps" start="5">
+                    <li class="install-step install-step-important">
+                        <div class="step-number" aria-hidden="true">5</div>
+                        <div class="step-content">
+                            <p class="step-kicker">Security warning</p>
+                            <h3>When macOS blocks the app, click Done.</h3>
+                            <p>
+                                The first warning says Apple could not verify the app.
+                                Do <strong>not</strong> choose Move to Trash. Click
+                                <strong>Done</strong> to close the warning.
+                            </p>
+
+                            <figure class="step-media">
+                                <a href="{{ '/assets/images/installation/05-first-launch-warning.png' | relative_url }}" target="_blank">
+                                    <img
+                                        src="{{ '/assets/images/installation/05-first-launch-warning.png' | relative_url }}"
+                                        alt="macOS warning that LocalKeyRemapper could not be verified, showing Move to Trash and Done buttons"
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <figcaption>Click <strong>Done</strong>.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li class="install-step install-step-important">
+                        <div class="step-number" aria-hidden="true">6</div>
+                        <div class="step-content">
+                            <p class="step-kicker">Privacy &amp; Security</p>
+                            <h3>Open System Settings and click Open Anyway.</h3>
+                            <p>
+                                Go to <strong>System Settings → Privacy &amp; Security</strong>,
+                                scroll down to the <strong>Security</strong> section and find
+                                the LocalKeyRemapper message. Click <strong>Open Anyway</strong>.
+                            </p>
+
+                            <div class="settings-path" aria-label="Settings path">
+                                System Settings
+                                <span>→</span>
+                                Privacy &amp; Security
+                                <span>→</span>
+                                Security
+                                <span>→</span>
+                                Open Anyway
+                            </div>
+
+                            <figure class="step-media step-media-portrait">
+                                <a href="{{ '/assets/images/installation/06-open-anyway-settings.png' | relative_url }}" target="_blank">
+                                    <img
+                                        src="{{ '/assets/images/installation/06-open-anyway-settings.png' | relative_url }}"
+                                        alt="macOS Privacy and Security settings with the LocalKeyRemapper message and Open Anyway button"
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <figcaption>Scroll to Security and click <strong>Open Anyway</strong>.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li class="install-step install-step-important">
+                        <div class="step-number" aria-hidden="true">7</div>
+                        <div class="step-content">
+                            <p class="step-kicker">Confirm opening</p>
+                            <h3>Confirm Open Anyway, then authenticate.</h3>
+                            <p>
+                                macOS asks once more whether you want to open LocalKeyRemapper.
+                                Click <strong>Open Anyway</strong>. Then approve the action with
+                                Touch ID or enter an administrator password if requested.
+                            </p>
+
+                            <div class="step-media-grid">
+                                <figure class="step-media">
+                                    <a href="{{ '/assets/images/installation/07-confirm-open-anyway.png' | relative_url }}" target="_blank">
+                                        <img
+                                            src="{{ '/assets/images/installation/07-confirm-open-anyway.png' | relative_url }}"
+                                            alt="macOS confirmation dialog asking whether to open LocalKeyRemapper, with an Open Anyway button"
+                                            loading="lazy"
+                                        >
+                                    </a>
+                                    <figcaption>Confirm <strong>Open Anyway</strong>.</figcaption>
+                                </figure>
+
+                                <figure class="step-media">
+                                    <a href="{{ '/assets/images/installation/07-authenticate.png' | relative_url }}" target="_blank">
+                                        <img
+                                            src="{{ '/assets/images/installation/07-authenticate.png' | relative_url }}"
+                                            alt="macOS Privacy and Security authentication prompt requesting Touch ID or an administrator password"
+                                            loading="lazy"
+                                        >
+                                    </a>
+                                    <figcaption>Authenticate if macOS asks you to.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="install-phase-heading">
+                    <p class="section-label">Part 3 · Grant Accessibility permission</p>
+                    <h2>Allow LocalKeyRemapper to remap keyboard events.</h2>
+                    <p>
+                        Opening the app and granting Accessibility access are separate macOS
+                        protections. The app can open before it has permission to remap keys.
+                    </p>
+                </div>
+
+                <ol class="install-steps" start="8">
+                    <li class="install-step">
+                        <div class="step-number" aria-hidden="true">8</div>
+                        <div class="step-content">
+                            <p class="step-kicker">Open Accessibility</p>
+                            <h3>Click Open Accessibility Settings… in LocalKeyRemapper.</h3>
+                            <p>
+                                After the app opens, LocalKeyRemapper shows
+                                <strong>Accessibility Permission Required</strong>.
+                                Click <strong>Open Accessibility Settings…</strong>.
+                            </p>
+
+                            <p class="step-detail">
+                                If you do not see the button, you can open the same page manually:
+                                System Settings → Privacy &amp; Security → Accessibility.
+                            </p>
+
+                            <figure class="step-media">
+                                <a href="{{ '/assets/images/installation/08-open-accessibility-settings.png' | relative_url }}" target="_blank">
+                                    <img
+                                        src="{{ '/assets/images/installation/08-open-accessibility-settings.png' | relative_url }}"
+                                        alt="LocalKeyRemapper window showing Accessibility Permission Required and the Open Accessibility Settings button"
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <figcaption>Click <strong>Open Accessibility Settings…</strong>.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li class="install-step">
+                        <div class="step-number" aria-hidden="true">9</div>
+                        <div class="step-content">
+                            <p class="step-kicker">Add LocalKeyRemapper</p>
+                            <h3>Click +, select LocalKeyRemapper.app, then click Open.</h3>
+                            <p>
+                                In Accessibility settings, click the <strong>+</strong> button.
+                                Select <strong>LocalKeyRemapper.app</strong> from Applications
+                                and click <strong>Open</strong>.
+                            </p>
+
+                            <p class="step-detail">
+                                If LocalKeyRemapper is already listed, you can skip the
+                                <strong>+</strong> step and continue directly to the next step.
+                            </p>
+
+                            <div class="step-media-grid">
+                                <figure class="step-media step-media-portrait">
+                                    <a href="{{ '/assets/images/installation/09-accessibility-add.png' | relative_url }}" target="_blank">
+                                        <img
+                                            src="{{ '/assets/images/installation/09-accessibility-add.png' | relative_url }}"
+                                            alt="macOS Accessibility privacy settings showing an empty application list and the plus button"
+                                            loading="lazy"
+                                        >
+                                    </a>
+                                    <figcaption>Click the <strong>+</strong> button.</figcaption>
+                                </figure>
+
+                                <figure class="step-media">
+                                    <a href="{{ '/assets/images/installation/09-select-localkeyremapper.png' | relative_url }}" target="_blank">
+                                        <img
+                                            src="{{ '/assets/images/installation/09-select-localkeyremapper.png' | relative_url }}"
+                                            alt="macOS file picker in Applications with LocalKeyRemapper.app selected and the Open button"
+                                            loading="lazy"
+                                        >
+                                    </a>
+                                    <figcaption>Select LocalKeyRemapper and click <strong>Open</strong>.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="install-step">
+                        <div class="step-number" aria-hidden="true">10</div>
+                        <div class="step-content">
+                            <p class="step-kicker">Enable permission</p>
+                            <h3>Turn on the switch next to LocalKeyRemapper.</h3>
+                            <p>
+                                LocalKeyRemapper now appears in the Accessibility list.
+                                Enable the switch next to it. Authenticate again if macOS asks.
+                            </p>
+
+                            <figure class="step-media step-media-portrait">
+                                <a href="{{ '/assets/images/installation/10-enable-accessibility.png' | relative_url }}" target="_blank">
+                                    <img
+                                        src="{{ '/assets/images/installation/10-enable-accessibility.png' | relative_url }}"
+                                        alt="macOS Accessibility settings with LocalKeyRemapper listed and its permission switch enabled"
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <figcaption>The LocalKeyRemapper switch should be <strong>On</strong>.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="install-phase-heading">
+                    <p class="section-label">Part 4 · Finish</p>
+                    <h2>Turn on keyboard remapping.</h2>
+                </div>
+
+                <ol class="install-steps" start="11">
+                    <li class="install-step install-step-done">
+                        <div class="step-number" aria-hidden="true">11</div>
+                        <div class="step-content">
+                            <p class="step-kicker">Ready</p>
+                            <h3>Return to LocalKeyRemapper and enable Keyboard remapping.</h3>
+                            <p>
+                                Return to the LocalKeyRemapper window and turn on
+                                <strong>Keyboard remapping</strong>. Your saved active profile
+                                can now remap keys locally on your Mac.
+                            </p>
+
+                            <figure class="step-media">
+                                <a href="{{ '/assets/images/installation/11-enable-remapping.png' | relative_url }}" target="_blank">
+                                    <img
+                                        src="{{ '/assets/images/installation/11-enable-remapping.png' | relative_url }}"
+                                        alt="LocalKeyRemapper window with the Keyboard remapping switch enabled"
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <figcaption>Keyboard remapping is now enabled.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="permission-explainer">
+            <div class="container">
+                <p class="section-label">Why two approvals?</p>
+                <h2>Opening the app and remapping keys are separate macOS protections.</h2>
+
+                <div class="permission-grid">
+                    <article class="permission-card">
+                        <p class="permission-number">01</p>
+                        <h3>Open Anyway</h3>
+                        <p>
+                            Allows macOS to open this copy of LocalKeyRemapper after
+                            you explicitly approve it.
+                        </p>
+                    </article>
+
+                    <article class="permission-card">
+                        <p class="permission-number">02</p>
+                        <h3>Accessibility</h3>
+                        <p>
+                            Allows LocalKeyRemapper to interact with protected keyboard
+                            events so your configured remapping rules can work.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="install-complete">
+            <div class="container">
+                <div class="complete-card">
+                    <p class="section-label">Done</p>
+                    <h2>LocalKeyRemapper is ready.</h2>
+
+                    <p>
+                        You can now create profiles, configure rules and enable or disable
+                        remapping whenever you need it.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="{{ '/' | relative_url }}#features">
+                            Explore features
+                        </a>
+
+                        <a
+                            class="button button-secondary"
+                            href="https://github.com/Alessandro-Giuriati/LocalKeyRemapper"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View source code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>

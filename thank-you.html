@@ -1,0 +1,149 @@
+---
+layout: default
+title: Thank You | LocalKeyRemapper
+description: Your LocalKeyRemapper download is starting. Continue with the macOS installation and Accessibility permission guide.
+robots: noindex, follow
+extra_css: /assets/css/download.css
+---
+
+<section class="thanks-hero">
+            <div class="container thanks-hero-inner">
+                <div class="thanks-icon" aria-hidden="true">✓</div>
+
+                <p class="eyebrow">Download started</p>
+
+                <h1>Thank you for downloading LocalKeyRemapper.</h1>
+
+                <p class="thanks-intro">
+                    Your LocalKeyRemapper DMG should start downloading
+                    automatically.
+                </p>
+
+                <p class="download-status" id="download-status" aria-live="polite">
+                    Preparing your download…
+                </p>
+
+                <div class="hero-actions">
+                    <a
+                        class="button button-primary"
+                        id="manual-download"
+                        href="https://github.com/Alessandro-Giuriati/LocalKeyRemapper/releases/download/v1.0.0/LocalKeyRemapper-1.0.0.dmg"
+                    >
+                        Download again
+                    </a>
+
+                    <a class="button button-secondary" href="{{ '/download.html' | relative_url }}">
+                        Other download options
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-step-section">
+            <div class="container">
+                <div class="next-step-card">
+                    <div class="next-step-copy">
+                        <p class="section-label">Next step</p>
+
+                        <h2>Need help installing it?</h2>
+
+                        <p>
+                            Follow the complete step-by-step guide from opening the
+                            DMG to allowing LocalKeyRemapper in macOS Accessibility
+                            settings.
+                        </p>
+
+                        <p class="next-step-note">
+                            The guide also explains why macOS asks you to use
+                            <strong>Open Anyway</strong> on the first launch.
+                        </p>
+                    </div>
+
+                    <a
+                        class="button button-primary next-step-button"
+                        href="{{ '/install.html' | relative_url }}"
+                    >
+                        View installation guide
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="ad-section" aria-label="Advertisement">
+            <div class="container">
+                <div class="ad-slot">
+                    <p class="ad-label">Advertisement</p>
+
+                    <div class="ad-placeholder">
+                        <span>Ad space</span>
+                    </div>
+
+                    <!--
+                        Future ad provider code goes here.
+
+                        Keep advertising visually separate from download,
+                        installation and GitHub buttons.
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <section class="source-reminder">
+            <div class="container source-reminder-grid">
+                <div>
+                    <p class="section-label">Open source</p>
+
+                    <h2>Want to know exactly what you're running?</h2>
+                </div>
+
+                <div>
+                    <p>
+                        LocalKeyRemapper's complete Swift source code is public.
+                        You can inspect the implementation, review the project
+                        history or build the application independently with Xcode.
+                    </p>
+
+                    <a
+                        class="text-link"
+                        href="https://github.com/Alessandro-Giuriati/LocalKeyRemapper"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Review the source on GitHub ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+<script>
+(() => {
+            const DMG_URL =
+                "https://github.com/Alessandro-Giuriati/LocalKeyRemapper/releases/download/v1.0.0/LocalKeyRemapper-1.0.0.dmg";
+
+            const params = new URLSearchParams(window.location.search);
+            const shouldDownload = params.get("download") === "1";
+            const status = document.getElementById("download-status");
+            const manualDownload = document.getElementById("manual-download");
+
+            manualDownload.href = DMG_URL;
+
+            if (!shouldDownload) {
+                status.textContent =
+                    "Use the button below whenever you are ready to download.";
+                return;
+            }
+
+            status.textContent = "Starting the DMG download…";
+
+            window.setTimeout(() => {
+                const downloadFrame = document.createElement("iframe");
+                downloadFrame.hidden = true;
+                downloadFrame.src = DMG_URL;
+                downloadFrame.title = "LocalKeyRemapper download";
+                document.body.appendChild(downloadFrame);
+
+                status.textContent =
+                    "The download has been requested. If it does not start, use “Download again”.";
+            }, 500);
+        })();
+</script>
