@@ -1,0 +1,38 @@
+# LocalKeyRemapper
+
+> LocalKeyRemapper is a native, privacy-first, security-first and accessibility-first keyboard remapper for macOS.
+
+LocalKeyRemapper is an open-source macOS utility focused exclusively on keyboard remapping.
+
+It allows users to create custom profiles, configurable remapping rules, global and per-profile shortcuts, modifier-aware mappings, bidirectional mappings and exceptions.
+
+The application runs locally on the user's Mac.
+
+No accounts, analytics, telemetry, cloud services, Internet connection or keystroke history are used.
+
+LocalKeyRemapper requires macOS 13.5 or later and Accessibility permission to intercept and remap keyboard events.
+
+## Website
+
+- [Home](https://localkeyremapper.github.io/): Overview of LocalKeyRemapper, its features, design principles, privacy, security, accessibility and native macOS approach.
+- [Download](https://localkeyremapper.github.io/download.html): Official options for downloading the ready-to-use macOS application or accessing the source code.
+- [Installation](https://localkeyremapper.github.io/install.html): Step-by-step instructions for installing the DMG, opening the application and granting Accessibility permission.
+
+## Project
+
+- [Source code](https://github.com/Alessandro-Giuriati/LocalKeyRemapper): Complete public Swift source code and project history.
+- [Project documentation](https://github.com/Alessandro-Giuriati/LocalKeyRemapper/blob/main/README.md): Detailed documentation covering installation, building from source, privacy, security, accessibility and usage.
+- [Releases](https://github.com/Alessandro-Giuriati/LocalKeyRemapper/releases): Official packaged releases of LocalKeyRemapper.
+- [Latest release](https://github.com/Alessandro-Giuriati/LocalKeyRemapper/releases/latest): Latest published LocalKeyRemapper release.
+- [MIT License](https://github.com/Alessandro-Giuriati/LocalKeyRemapper/blob/main/LICENSE): Open-source license for the project.
+
+## Important information
+
+- LocalKeyRemapper is designed for macOS.
+- The minimum supported operating system is macOS 13.5.
+- Keyboard remapping requires explicit macOS Accessibility permission.
+- All remapping is performed locally on the Mac.
+- The application does not require an account or Internet connection.
+- The project does not use analytics, telemetry or cloud services.
+- The source code is publicly inspectable.
+- Official compiled builds should be obtained only from the official LocalKeyRemapper GitHub repository and its Releases page.
