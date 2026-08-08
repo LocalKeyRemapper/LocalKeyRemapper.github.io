@@ -235,9 +235,16 @@
     border-top: 1px solid var(--border);
 }
 
-.ad-slot {
-    max-width: 980px;
+.ad-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    max-width: 1180px;
     margin-inline: auto;
+}
+
+.ad-slot {
+    min-width: 0;
 }
 
 .ad-label {

@@ -60,6 +60,14 @@
         defer
     ></script>
 
+    {% if page.adsense %}
+    <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8263430022812619"
+        crossorigin="anonymous"
+    ></script>
+    {% endif %}
+
     {% if page.software_schema %}
     {% include software-schema.html %}
     {% endif %}
