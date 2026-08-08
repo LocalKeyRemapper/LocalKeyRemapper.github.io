@@ -585,6 +585,10 @@ select {
     background: var(--surface-secondary);
 }
 
+.feature-card > .bidirectional-rule {
+    flex-grow: 1;
+}
+
 .mini-rule span {
     padding: 0.75rem 0.9rem;
     border: 1px solid var(--border);
@@ -619,10 +623,20 @@ select {
 
 .exception-visual {
     position: relative;
-    min-height: 130px;
-    padding: 2.2rem 1.4rem;
+    min-height: 0;
+    padding: 0.75rem 1rem;
+    gap: 0.5rem !important;
     border-radius: 20px;
     background: var(--surface-secondary);
+}
+
+.exception-visual .mini-rule {
+    min-height: 52px;
+    padding: 0.5rem;
+}
+
+.exception-visual > div:last-child {
+    padding: 0.5rem 0.75rem !important;
 }
 
 .rule-line {
