@@ -189,6 +189,25 @@ select {
     color: var(--text-primary);
 }
 
+.site-navigation .header-support {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 42px;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid rgba(36, 87, 214, 0.28);
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+}
+
+.site-navigation .header-support:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft-strong);
+    color: var(--accent-hover);
+}
+
 .site-navigation .header-download {
     display: inline-flex;
     align-items: center;
@@ -333,6 +352,27 @@ select {
     border-color: var(--accent);
     color: var(--accent);
     box-shadow: var(--shadow-small);
+}
+
+.button-support {
+    gap: 0.4rem;
+    border-color: rgba(36, 87, 214, 0.28);
+    background: var(--accent-soft);
+    color: var(--accent);
+}
+
+.button-support:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft-strong);
+    color: var(--accent-hover);
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1.35rem;
+    font-weight: 760;
 }
 
 .text-link {
