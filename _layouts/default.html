@@ -36,6 +36,11 @@
     <meta property="og:image" content="{{ page.og_image | relative_url }}">
     {% endif %}
 
+    <link
+    rel="canonical"
+    href="{{ page.url | absolute_url }}"
+    >
+
     <title>{{ page.title }}</title>
 
     <link
