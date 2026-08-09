@@ -1,18 +1,30 @@
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "LocalKeyRemapper",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "macOS 13.5 or later",
-    "description": "A native, privacy-first and accessibility-first keyboard remapper for macOS.",
-    "downloadUrl": "https://github.com/Alessandro-Giuriati/LocalKeyRemapper/releases/latest",
-    "codeRepository": "https://github.com/Alessandro-Giuriati/LocalKeyRemapper",
-    "license": "https://opensource.org/license/mit",
-    "isAccessibleForFree": true,
-    "author": {
-        "@type": "Person",
-        "name": "Alessandro Giuriati"
-    }
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "https://localkeyremapper.github.io/#website",
+            "url": "https://localkeyremapper.github.io/",
+            "name": "LocalKeyRemapper"
+        },
+        {
+            "@type": "SoftwareApplication",
+            "@id": "https://localkeyremapper.github.io/#software",
+            "name": "LocalKeyRemapper",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "macOS 13.5 or later",
+            "description": "A native, privacy-first and accessibility-first keyboard remapper for macOS.",
+            "url": "https://localkeyremapper.github.io/",
+            "downloadUrl": "https://github.com/Alessandro-Giuriati/LocalKeyRemapper/releases/latest",
+            "codeRepository": "https://github.com/Alessandro-Giuriati/LocalKeyRemapper",
+            "license": "https://opensource.org/license/mit",
+            "isAccessibleForFree": true,
+            "author": {
+                "@type": "Person",
+                "name": "Alessandro Giuriati"
+            }
+        }
+    ]
 }
 </script>
